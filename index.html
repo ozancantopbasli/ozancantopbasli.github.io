@@ -4,26 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="AI Email Guardian is a personal AI-powered Gmail monitoring and Telegram notification assistant.">
+
     <title>AI Email Guardian</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             background: #0f172a;
             color: #e2e8f0;
             margin: 0;
             padding: 60px 20px;
             text-align: center;
+            min-height: 100vh;
         }
 
         main {
             max-width: 720px;
-            margin: auto;
+            margin: 0 auto;
         }
 
         h1 {
             color: #38bdf8;
             font-size: 42px;
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            color: #f1f5f9;
+            font-size: 24px;
         }
 
         p {
@@ -31,31 +46,84 @@
             color: #cbd5e1;
         }
 
+        .subtitle {
+            font-size: 17px;
+            margin-bottom: 36px;
+        }
+
         .card {
             background: #1e293b;
             border-radius: 14px;
-            padding: 25px;
+            padding: 30px 25px;
             margin-top: 30px;
         }
 
+        .card p {
+            margin-bottom: 20px;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
         footer {
-            margin-top: 50px;
+            margin-top: 55px;
+            padding-top: 20px;
             font-size: 14px;
             color: #94a3b8;
+        }
+
+        footer p {
+            color: #94a3b8;
+        }
+
+        footer a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            color: #7dd3fc;
+            text-decoration: underline;
+        }
+
+        footer a:focus-visible {
+            outline: 2px solid #38bdf8;
+            outline-offset: 4px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 40px 16px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .card {
+                padding: 24px 18px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 
 <body>
     <main>
+
         <h1>AI Email Guardian</h1>
 
-        <p>
+        <p class="subtitle">
             A personal AI-powered email monitoring
             and notification assistant.
         </p>
 
-        <div class="card">
+        <section class="card">
             <h2>About the Project</h2>
 
             <p>
@@ -66,31 +134,42 @@
             </p>
 
             <p>
-                The application uses Gmail API,
-                Python, Google Gemini and Telegram
+                The application uses the Gmail API,
+                Python, Google Gemini, and Telegram
                 to support email classification,
-                summarization and notifications.
+                summarization, and notifications.
             </p>
 
             <p>
                 Gmail access is read-only.
-                The application does not send
-                or delete emails.
+                The application does not send,
+                modify, or delete emails.
             </p>
-        </div>
+
+            <p>
+                Email information may be processed
+                by external services when required
+                for AI analysis and notifications.
+                Local privacy filters are used
+                to reduce unnecessary data sharing.
+            </p>
+        </section>
 
         <footer>
+
             <p>
                 Personal Software Project |
                 AI Email Guardian
             </p>
-            
-            <p> <a href="/privacy.html"
-           style="color: #38bdf8;">
-            Privacy Policy
-                </a> 
+
+            <p>
+                <a href="/privacy.html">
+                    Privacy Policy
+                </a>
             </p>
+
         </footer>
+
     </main>
 </body>
 </html>
