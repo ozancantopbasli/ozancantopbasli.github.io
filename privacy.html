@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Privacy Policy - AI Email Guardian</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.8;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            color: #38bdf8;
+        }
+
+        a {
+            color: #7dd3fc;
+        }
+
+        section {
+            margin-bottom: 28px;
+        }
+
+        footer {
+            margin-top: 50px;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+<main>
+
+    <h1>AI Email Guardian - Privacy Policy</h1>
+
+    <p>Last updated: October 12, 2026</p>
+
+    <section>
+        <h2>1. Overview</h2>
+
+        <p>
+            AI Email Guardian is a personal email
+            monitoring and notification application.
+            It identifies potentially important emails
+            and provides AI-generated summaries
+            and Telegram notifications.
+        </p>
+
+        <p>
+            The application is intended for personal
+            use with explicitly authorized Gmail accounts.
+        </p>
+    </section>
+
+    <section>
+        <h2>2. Google Account Access</h2>
+
+        <p>
+            AI Email Guardian uses Google's OAuth 2.0
+            authentication system and the Gmail API.
+        </p>
+
+        <p>
+            The application requests read-only Gmail
+            access to retrieve email metadata
+            and message content for classification.
+        </p>
+
+        <p>
+            It does not request permission to
+            send, modify, or delete Gmail messages.
+        </p>
+    </section>
+
+    <section>
+        <h2>3. Information Processed</h2>
+
+        <p>
+            Depending on the message, the application
+            may process sender information, email
+            subjects, message content, message
+            identifiers, and classification results.
+        </p>
+
+        <p>
+            Local filtering attempts to identify
+            sensitive messages and reduce the
+            information shared with external services.
+            Such filtering cannot guarantee detection
+            of every sensitive detail.
+        </p>
+    </section>
+
+    <section>
+        <h2>4. AI Processing</h2>
+
+        <p>
+            AI Email Guardian may transmit limited
+            email information to the Google Gemini API
+            to classify importance, generate summaries,
+            and identify actions requiring attention.
+        </p>
+
+        <p>
+            The application uses local filtering and
+            data minimization before AI processing.
+            Data sent to Gemini is subject to
+            Google's applicable API privacy and
+            data-processing terms.
+        </p>
+
+        <p>
+            AI analysis is intended solely to provide
+            the email monitoring functionality
+            requested by the user.
+        </p>
+    </section>
+
+    <section>
+        <h2>5. Telegram Notifications</h2>
+
+        <p>
+            Important email summaries, priority
+            information, and recommended actions
+            may be sent to the user's authorized
+            Telegram chat through the Telegram Bot API.
+        </p>
+
+        <p>
+            Certain sensitive messages may generate
+            a generic notification without transferring
+            the original email content.
+        </p>
+    </section>
+
+    <section>
+        <h2>6. Local Storage</h2>
+
+        <p>
+            The application stores OAuth credentials,
+            authorization tokens, mailbox checkpoints,
+            and processed message records locally
+            in its configured environment.
+        </p>
+
+        <p>
+            The current SQLite message database
+            stores message identifiers and processing
+            status rather than complete email bodies.
+        </p>
+    </section>
+
+    <section>
+        <h2>7. Data Sharing and Usage</h2>
+
+        <p>
+            Google user data is accessed only to
+            provide the authorized email monitoring,
+            classification, and notification features.
+        </p>
+
+        <p>
+            The developer does not sell Gmail user data
+            or use it for advertising or ad targeting.
+        </p>
+
+        <p>
+            Limited information may be transmitted
+            to Google Gemini and Telegram as necessary
+            to provide the requested functionality.
+        </p>
+
+        <p>
+            The application's use of Google user data
+            is intended to comply with the Google API
+            Services User Data Policy, including
+            applicable Limited Use requirements.
+        </p>
+    </section>
+
+    <section>
+        <h2>8. Access Revocation and Deletion</h2>
+
+        <p>
+            Users can revoke application access
+            through their Google Account's
+            third-party connections settings.
+        </p>
+
+        <p>
+            Locally stored tokens and processing records
+            can be removed from the application's
+            configured storage environment.
+        </p>
+
+        <p>
+            Revoking access prevents future authorized
+            Gmail API requests after the revocation
+            takes effect.
+        </p>
+    </section>
+
+    <section>
+        <h2>9. Changes to This Policy</h2>
+
+        <p>
+            This policy may be updated if application
+            functionality, data handling, or
+            third-party integrations change.
+        </p>
+    </section>
+
+    <footer>
+        <p>
+            AI Email Guardian - Personal Software Project
+        </p>
+
+        <p>
+            <a href="/">
+                Return to Home
+            </a>
+        </p>
+    </footer>
+
+</main>
+</body>
+</html>
